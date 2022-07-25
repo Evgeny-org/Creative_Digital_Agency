@@ -1,0 +1,49 @@
+/*Обнуляющий стиль*/
+*{
+	margin: 0;
+	padding: 0;
+}
+
+
+/*Default отступы*/
+.container{
+	max-width: 1400px;
+	margin: 0 auto;
+}
+
+
+/*Локально подключенные шрифты из папок проекта*/
+										/*Gotham*/
+@font-face{
+	font-family: Gotham_Bold; 
+	src: url(fonts/Gotham/Gotham_Bold.otf); 
+}
+
+@font-face{
+	font-family: Gotham_Medium; 
+	src: url(fonts/Gotham/Gotham_Medium.ttf); 
+}
+
+@font-face{
+	font-family: Gotham_Book; 
+	src: url(fonts/Gotham/Gotham_Book.ttf); 
+}
+
+										/*MyriadPro*/
+@font-face{
+	font-family: MyriadPro_Regular; 
+	src: url(fonts/MyriadPro/MyriadPro_Regular.otf); 
+}
+
+										/*OpenSans*/
+@font-face{
+	font-family: OpenSans_Bold;
+	src: url(fonts/OpenSans/OpenSans_Bold.ttf); 
+}
+
+@font-face{
+	font-family: OpenSans_Regular; 
+	src: url(fonts/OpenSans/OpenSans_Regular.ttf); 
+}
+
+
