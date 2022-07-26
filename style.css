@@ -46,4 +46,162 @@
 	src: url(fonts/OpenSans/OpenSans_Regular.ttf); 
 }
 
+										/*Шапка*/
+header{
+	background-image: url(imgs/header_bg.png);
+	background-repeat: no-repeat;
+	background-size: 100%;
+	padding: 25px 0 100px 0;
+}
 
+/*Ограничение*/
+header nav.container{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin-bottom: 40px;
+}
+
+/*Логотип*/
+header nav .logo{
+	width: 100px;
+	height: 100px;
+	position: relative;
+	margin: 20px 0 0 20px;
+	transition: .5s ease;
+}
+
+header nav .logo:hover{
+	width: 120px;
+	height: 120px;
+	margin: 10px 0 -10px 10px;
+
+}
+
+header nav .logo .blue_rec{
+	width: 100px;
+	height: 100px;
+	background-color: #11749e;
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 1;
+}
+
+header nav .logo .white_rec{
+	width: 100px;
+	height: 100px;
+	background-color: rgba(255, 255, 255, 0.75);
+	position: absolute;
+	bottom: 0;
+	right: 0;
+	z-index: 0;
+}
+
+header nav .logo p.text{
+	font-family: OpenSans_Bold;
+	font-size: 48px;
+	color: white;
+	display: inline-block;
+	position: relative;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+}
+
+/*Навигация*/
+header nav .menu_icons{
+	display: flex;
+	align-items: center;
+}
+
+header nav .menu a{
+	text-decoration: none;
+	font-family: MyriadPro_Regular;
+	font-size: 24px;
+	color: #fff;
+	margin-left: 20px;
+	padding: 40px 10px 90px 10px;
+	transition: .3s ease;
+	position: relative;
+}
+
+header nav .icons{
+	margin-left: 50px;
+}
+
+header nav .icons a{
+	text-decoration: none;
+	margin-left: 25px;
+	padding: 40px 10px 93px 10px;
+	transition: .3s ease;
+	position: relative;
+} 
+
+header nav .icons a:after,
+header nav .menu a:after{
+	content: "";
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	width: 100%;
+	height: 0px;
+	background-color: #11749e;
+	transition: .3s ease;
+}
+
+header nav .icons a:hover:after,
+header nav .menu a:hover:after{
+	height: 8px;
+}
+
+/*Разделитель*/
+header hr{
+	border: 0;
+	width: 100%;
+	height: 5px;
+	background-color: rgba(255, 255, 255, .1);
+	margin-bottom: 250px;
+}
+
+/*Информация под навигацией*/
+header h1{
+	font-family: Gotham_Bold;
+	text-align: center;
+	font-size: 164px;
+	color: #fff;
+}
+
+header p.under_h1{
+	text-transform: uppercase;
+	font-family: Gotham_Medium;
+	text-align: center;
+	font-size: 30px;
+	color: #11749e;
+	letter-spacing: 20px;
+	margin-bottom: 200px;
+}
+
+header p.scroll_down{
+	font-family: OpenSans_Regular;
+	color: #fff;
+	font-size: 16px;
+	text-align: center;
+	margin-bottom: 30px;
+}
+
+header img.arrow{
+	cursor: pointer;
+	width: 30px;
+	display: block;
+	margin: 0 auto;
+	border: 2px solid #fff;
+	padding: 30px;
+	border-radius: 100%;
+	background-color: rgba(255, 255, 255, 0);
+	transition: .5s ease;
+}
+
+header img.arrow:hover{
+	background-color: rgba(255, 255, 255, .1);
+}
