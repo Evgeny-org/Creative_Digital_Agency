@@ -138,8 +138,8 @@ header nav .icons a{
 	position: relative;
 } 
 
-header nav .icons a:after,
-header nav .menu a:after{
+header nav .icons a::after,
+header nav .menu a::after{
 	content: "";
 	position: absolute;
 	left: 0;
@@ -150,8 +150,8 @@ header nav .menu a:after{
 	transition: .3s ease;
 }
 
-header nav .icons a:hover:after,
-header nav .menu a:hover:after{
+header nav .icons a:hover::after,
+header nav .menu a:hover::after{
 	height: 8px;
 }
 
@@ -161,7 +161,7 @@ header hr{
 	width: 100%;
 	height: 5px;
 	background-color: rgba(255, 255, 255, .1);
-	margin-bottom: 250px;
+	margin-bottom: 200px;
 }
 
 /*Информация под навигацией*/
@@ -179,7 +179,7 @@ header p.under_h1{
 	font-size: 30px;
 	color: #11749e;
 	letter-spacing: 20px;
-	margin-bottom: 200px;
+	margin-bottom: 125px;
 }
 
 header p.scroll_down{
@@ -192,11 +192,11 @@ header p.scroll_down{
 
 header img.arrow{
 	cursor: pointer;
-	width: 30px;
+	width: 25px;
 	display: block;
 	margin: 0 auto;
 	border: 2px solid #fff;
-	padding: 30px;
+	padding: 25px;
 	border-radius: 100%;
 	background-color: rgba(255, 255, 255, 0);
 	transition: .5s ease;
@@ -204,4 +204,103 @@ header img.arrow{
 
 header img.arrow:hover{
 	background-color: rgba(255, 255, 255, .1);
+}
+
+										/*Тело*/
+/*Заголовок*/
+main .awesome_agency{
+	background-color: #11749e;
+	padding: 250px 0 100px 0;
+}
+
+/*Заголовок 2го уровня*/
+main h2{
+	text-align: center;
+	font-family: Gotham_Book;
+	font-size: 48px;
+	color: #fff;
+	text-transform: uppercase;
+	position: relative;
+	margin-bottom: 200px;
+}
+
+/*Буква-фон заголовка*/
+main h2 p{
+	position: absolute;
+	top: 0;
+	left: 50%;
+	font-family: Roboto;
+	transform: translate(-50%, -45%);
+	font-size: 350px;
+	opacity: 15%;
+}
+
+/*БлоКИ с инофрмацией о будущем*/
+main .awesome_agency .features{
+	display: flex;
+	justify-content: space-between;
+}
+
+/*БлоК с инофрмацией о будущем*/
+main .awesome_agency .feature{
+	width: 24%;
+}
+
+/*Фон артинка*/
+main .awesome_agency .feature .block-img{
+	cursor: pointer;
+	background-color: #2e85aa;
+	margin: 0 auto;
+	width: 150px;
+	height: 150px;
+	border-radius: 50%;
+	position: relative;
+	margin-bottom: 30px;
+}
+
+/*Анимация для фона картинки*/
+main .awesome_agency .feature .block-img::before{
+	content: "";
+	width: 0;
+	height: 0;
+	border-radius: 50%;
+	background-color: #11749e;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	transition: .3s ease;
+}
+
+main .awesome_agency .feature .block-img:hover::before{
+	width: 145px;
+	height: 145px;
+}
+
+/*Картинка*/
+main .awesome_agency .feature .block-img img{
+	width: 45px;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+}
+
+/*Заголовок 4го уровня*/
+main h4{
+	font-family: Gotham_Book;
+	text-align: center;
+	color: #fff;
+	font-size: 22px;
+	text-transform: uppercase;
+	margin-bottom: 40px;
+}
+
+/*Текс под заголовком*/
+main .awesome_agency .feature p{
+	font-family: Gotham_Book;
+	font-size: 18px;
+	color: #fff;
+	line-height: 1.4;
+	text-align: center;
 }
