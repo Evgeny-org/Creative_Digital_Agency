@@ -469,6 +469,7 @@ main .akita_inu_dog2{
 	background-repeat: no-repeat;
 	background-size: cover;
 	padding: 150px 0;
+	margin-bottom: 200px;
 }
 
 main .akita_inu_dog2 .body{
@@ -510,7 +511,7 @@ main .akita_inu_dog2 .text li{
 	padding: 10px 0 10px 25px;
 	font-family: Gotham_Book;
 	font-size: 18px;
-	margin-bottom: 20px;
+	margin-bottom: 30px;
 	text-transform: uppercase;
 }
 
@@ -522,4 +523,62 @@ main .akita_inu_dog2 .text li:nth-child(2){
 }
 main .akita_inu_dog2 .text li:nth-child(3){
 	width: 70%;
+}
+
+main .our_team{
+
+}
+
+main .our_team h2{
+	margin-bottom: 200px;
+}
+
+main .our_team p.under_text{
+	text-align: center;
+	font-family: Gotham_Book;
+	font-size: 36px;
+	margin-bottom: 100px;
+}
+
+main .our_team .blocks{
+	display: flex;
+	justify-content: space-between;
+}
+
+main .our_team .block{
+	width: 23%;
+}
+
+main .our_team .block .img{
+	position: relative;
+}
+
+main .our_team .block img{
+	width: 100%;
+}
+
+main .our_team .block .block_text_OT{
+	width: 75%;
+	position: absolute;
+	bottom: -5%;
+	left: 50%;
+	transform: translate(-50%,0);
+}
+
+main .our_team .block .block_text_OT{
+	background-color: #fff;
+	padding: 25px 0;
+}
+
+main .our_team .block .block_text_OT h3{
+	font-size: 24px;
+	text-align: center;
+	color: #11749e;
+	margin-bottom: 10px;
+}
+
+main .our_team .block .block_text_OT p{
+	font-family: Gotham_Book;
+	font-size: 20px;
+	text-align: center;
 }
