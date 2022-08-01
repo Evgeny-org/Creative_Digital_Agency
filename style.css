@@ -216,32 +216,60 @@ header img.arrow:hover{
 }
 
 										/*Тело*/
+										/*Общие стили*/
+/*Заголовок 2го уровня*/
+main h2{
+	text-align: center;
+	font-family: Gotham_Book;
+	font-size: 48px;
+	text-transform: uppercase;
+	position: relative;
+}
+
+/*Буква-фон заголовка*/
+main h2 p{
+	position: absolute;
+	top:0;
+	left: 50%;
+	font-family: Roboto;
+	transform: translate(-50%, -45%);
+	font-size: 350px;
+	opacity: 15%;
+}
+
+/*Заголовок 3го уровня*/
+main h3{
+	font-family: Gotham_Medium;
+	font-size: 36px;
+	text-transform: uppercase;
+}
+
+/*Заголовок 4го уровня*/
+main h4{
+	font-family: Gotham_Book;
+	text-align: center;
+	font-size: 22px;
+	text-transform: uppercase;
+}
+
+										/*Конкертные стили стили*/
 /*Заголовок*/
 main .awesome_agency{
 	background-color: #11749e;
 	padding: 250px 0 100px 0;
 }
 
-/*Заголовок 2го уровня*/
-main h2{
-	text-align: center;
-	font-family: Gotham_Book;
-	font-size: 48px;
+main .awesome_agency h2,
+main .awesome_agency h4{
 	color: #fff;
-	text-transform: uppercase;
-	position: relative;
+}
+
+main .awesome_agency h2{
 	margin-bottom: 200px;
 }
 
-/*Буква-фон заголовка*/
-main h2 p{
-	position: absolute;
-	top: 0;
-	left: 50%;
-	font-family: Roboto;
-	transform: translate(-50%, -45%);
-	font-size: 350px;
-	opacity: 15%;
+main .awesome_agency h4{
+	margin-bottom: 40px;
 }
 
 /*БлоКИ с инофрмацией о будущем*/
@@ -251,7 +279,7 @@ main .awesome_agency .features{
 }
 
 /*БлоК с инофрмацией о будущем*/
-main .awesome_agency .feature{
+main .awesome_agency .features .feature{
 	width: 24%;
 }
 
@@ -295,16 +323,6 @@ main .awesome_agency .feature .block-img img{
 	transform: translate(-50%,-50%);
 }
 
-/*Заголовок 4го уровня*/
-main h4{
-	font-family: Gotham_Book;
-	text-align: center;
-	color: #fff;
-	font-size: 22px;
-	text-transform: uppercase;
-	margin-bottom: 40px;
-}
-
 /*Текс под заголовком*/
 main .awesome_agency .feature p{
 	font-family: Gotham_Book;
@@ -312,6 +330,10 @@ main .awesome_agency .feature p{
 	color: #fff;
 	line-height: 1.4;
 	text-align: center;
+}
+
+main .akita_inu_dog{
+	margin-bottom: 225px;
 }
 
 main .akita_inu_dog .blocks{
@@ -331,6 +353,10 @@ main .akita_inu_dog .blocks .block_img img{
 main .akita_inu_dog .block_text .text-left{
 	padding: 100px 100px 100px 200px;
 	color: #fff;
+}
+
+main .akita_inu_dog .block_text h3{
+	margin-bottom: 50px;
 }
 
 main .akita_inu_dog .block_text .text-left h3,
@@ -357,13 +383,6 @@ main .akita_inu_dog .block_text span{
 	margin: 0 10px;
 }
 
-main h3{
-	font-family: Gotham_Medium;
-	font-size: 36px;
-	text-transform: uppercase;
-	margin-bottom: 50px;
-}
-
 main .akita_inu_dog .block_text p.info{
 	font-family: Gotham_Book;
 	font-size: 20px;
@@ -373,4 +392,46 @@ main .akita_inu_dog .block_text p.info{
 
 main .akita_inu_dog .block_text p.info:last-child{
 	margin-bottom: 0;
+}
+
+main .lets_blog{
+
+}
+
+main .lets_blog h2{
+	margin-bottom: 175px;
+}
+
+main .lets_blog p.under_text{
+	text-align: center;
+	font-family: Gotham_Book;
+	font-size: 36px;
+	margin-bottom: 100px;
+}
+
+main .lets_blog .blocks{
+	display: flex;
+	justify-content: space-between;
+}
+
+main .lets_blog .blocks .block{
+	width: 23%;
+}
+
+main .lets_blog .block img{
+	width: 100%;
+	margin-bottom: 25px;
+}
+
+main .lets_blog .block h4{
+	color: #11749e;
+	text-align: center;
+	margin-bottom: 20px;
+}
+
+main .lets_blog .block p{
+	font-family: Gotham_Book;
+	text-align: center;
+	line-height: 1.5;
+	color: grey;
 }
