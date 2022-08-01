@@ -395,7 +395,7 @@ main .akita_inu_dog .block_text p.info:last-child{
 }
 
 main .lets_blog{
-
+	margin-bottom: 125px;
 }
 
 main .lets_blog h2{
@@ -434,4 +434,32 @@ main .lets_blog .block p{
 	text-align: center;
 	line-height: 1.5;
 	color: grey;
+}
+
+main .block_text{
+	background-color: #11749e;
+}
+
+main .block_text .block{
+	display: flex;
+	justify-content: space-between;
+	padding: 150px 0 200px 0;
+}
+
+main .block_text .block .body{
+	width: 47%;
+	display: flex;
+}
+
+main .block_text .body img{
+	width: 100px;
+	height: 100px;
+	margin-right: 40px;
+}
+
+main .block_text .body p{
+	color: #fff;
+	font-family: Gotham_Book;
+	font-size: 20px;
+	line-height: 1.5;
 }
