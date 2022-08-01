@@ -463,3 +463,63 @@ main .block_text .body p{
 	font-size: 20px;
 	line-height: 1.5;
 }
+
+main .akita_inu_dog2{
+	background-image: url(imgs/akita_bg.png);
+	background-repeat: no-repeat;
+	background-size: cover;
+	padding: 150px 0;
+}
+
+main .akita_inu_dog2 .body{
+	display: flex;
+	align-items: center;
+}
+
+main .akita_inu_dog2 .body div{
+	width: 50%;
+}
+
+main .akita_inu_dog2 .img img{
+	width: 70%;
+	display: block;
+	margin: 0 auto;
+}
+
+main .akita_inu_dog2 .text{
+	padding-right: 50px;
+}
+
+main .akita_inu_dog2 .text h3{
+	color: #fff;
+	margin-bottom: 50px;
+}
+
+main .akita_inu_dog2 .text .text{
+	color: #fff;
+	font-family: Gotham_Book;
+	line-height: 1.5;
+	font-size: 20px;
+	margin-bottom: 75px;
+}
+
+main .akita_inu_dog2 .text li{
+	color: #fff;
+	list-style-type: none;
+	background-color: #11749e;
+	padding: 10px 0 10px 25px;
+	font-family: Gotham_Book;
+	font-size: 18px;
+	margin-bottom: 20px;
+	text-transform: uppercase;
+}
+
+main .akita_inu_dog2 .text li:nth-child(1){
+	width: 60%;
+}
+main .akita_inu_dog2 .text li:nth-child(2){
+	width: 65%;
+}
+main .akita_inu_dog2 .text li:nth-child(3){
+	width: 70%;
+}
