@@ -11,6 +11,15 @@
 	margin: 0 auto;
 }
 
+/*Цвета необходимые в процессе правилбной вёрстки*/
+.black{
+	background-color: #222222;
+}
+
+.white{
+	background-color: #f3f3f3;
+}
+
 
 /*Локально подключенные шрифты из папок проекта*/
 										/*Gotham*/
@@ -303,4 +312,65 @@ main .awesome_agency .feature p{
 	color: #fff;
 	line-height: 1.4;
 	text-align: center;
+}
+
+main .akita_inu_dog .blocks{
+	display: flex;
+}
+
+main .akita_inu_dog .blocks .block_text,
+main .akita_inu_dog .blocks .block_img{
+	width: 50%;
+}
+
+main .akita_inu_dog .blocks .block_img img{
+	width: 100%;
+	height: 100%;
+}
+
+main .akita_inu_dog .block_text .text-left{
+	padding: 100px 100px 100px 200px;
+	color: #fff;
+}
+
+main .akita_inu_dog .block_text .text-left h3,
+main .akita_inu_dog .block_text .text-left p{
+	color: #fff;
+}
+
+main .akita_inu_dog .block_text .text-right{
+	padding: 100px 200px 100px 100px;
+}
+
+main .akita_inu_dog .block_text .text-right h3,
+main .akita_inu_dog .block_text .text-right p{
+	color: #000;
+}
+
+main .akita_inu_dog .block_text p.overhead{
+	font-family: Gotham_Book;
+	font-size: 18px;
+	margin-bottom: 10px;
+}
+
+main .akita_inu_dog .block_text span{
+	margin: 0 10px;
+}
+
+main h3{
+	font-family: Gotham_Medium;
+	font-size: 36px;
+	text-transform: uppercase;
+	margin-bottom: 50px;
+}
+
+main .akita_inu_dog .block_text p.info{
+	font-family: Gotham_Book;
+	font-size: 20px;
+	margin-bottom: 35px;
+	line-height: 1.5;
+}
+
+main .akita_inu_dog .block_text p.info:last-child{
+	margin-bottom: 0;
 }
