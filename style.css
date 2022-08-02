@@ -632,6 +632,7 @@ main .we_love textarea{
 }
 
 main .we_love button{
+	cursor: pointer;
 	display: block;
 	margin: 0 auto;
 	font-size: 24px;
@@ -639,4 +640,21 @@ main .we_love button{
 	padding: 20px 80px;
 	background-color: #11749e;
 	border: 0;
+}
+
+footer{
+	background-color: #222222;
+	padding: 50px 0;
+}
+
+footer .body{
+	display: flex;
+	justify-content: space-between;
+	text-align: center;
+}
+
+footer .body p{
+	color: #fff;
+	font-size: 14px;
+	font-family: Roboto;
 }
