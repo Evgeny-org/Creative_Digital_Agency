@@ -436,28 +436,28 @@ main .lets_blog .block p{
 	color: grey;
 }
 
-main .block_text{
+main .block_text_inf{
 	background-color: #11749e;
 }
 
-main .block_text .block{
+main .block_text_inf .block{
 	display: flex;
 	justify-content: space-between;
 	padding: 150px 0 200px 0;
 }
 
-main .block_text .block .body{
+main .block_text_inf .block .body{
 	width: 47%;
 	display: flex;
 }
 
-main .block_text .body img{
+main .block_text_inf .body img{
 	width: 100px;
 	height: 100px;
 	margin-right: 40px;
 }
 
-main .block_text .body p{
+main .block_text_inf .body p{
 	color: #fff;
 	font-family: Gotham_Book;
 	font-size: 20px;
@@ -526,7 +526,7 @@ main .akita_inu_dog2 .text li:nth-child(3){
 }
 
 main .our_team{
-
+	margin-bottom: 150px;
 }
 
 main .our_team h2{
@@ -581,4 +581,62 @@ main .our_team .block .block_text_OT p{
 	font-family: Gotham_Book;
 	font-size: 20px;
 	text-align: center;
+}
+
+main .we_love{
+	background-image: url(imgs/form_bg.png);
+	background-size: cover;
+	background-repeat: no-repeat;
+	padding: 300px 0 100px 0;
+}
+
+main .we_love h2{
+	color: #fff;
+	margin-bottom: 200px;
+}
+
+main .we_love .inputs{
+	display: flex;
+	justify-content: space-between;
+	margin-bottom: 40px;
+}
+
+main .we_love .inputs input{
+	width: 31%;
+	padding: 10px 25px;
+	font-size: 20px;
+}
+
+main .we_love input,
+main .we_love textarea{
+	width: 100%;
+	padding: 15px 25px;
+	font-size: 20px;
+	box-sizing: border-box;
+	background-color: rgba(0, 0, 0, 0);
+	border: 2px solid #fff;
+	color: #fff;
+}
+
+main .we_love textarea::placeholder,
+main .we_love input::placeholder{
+	color: #fff;
+}
+
+main .we_love textarea:focus,
+main .we_love input:focus{
+	outline: none;
+}
+main .we_love textarea{
+	margin-bottom: 50px;
+}
+
+main .we_love button{
+	display: block;
+	margin: 0 auto;
+	font-size: 24px;
+	color: #fff;
+	padding: 20px 80px;
+	background-color: #11749e;
+	border: 0;
 }
