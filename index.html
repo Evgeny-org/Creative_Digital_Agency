@@ -10,7 +10,9 @@
 	<link rel="stylesheet" href="style.css">
 </head>
 <body>
-	<header>
+	<div class="progress"></div>
+	<a href="#up" class="up">up</a>
+	<header id="up">
 		<nav class="container">
 			<a class="logo" href="">
 				<div class="blue_rec">
@@ -18,43 +20,50 @@
 				</div>
 				<div class="white_rec"></div>
 			</a>
-			<div class="menu_icons">
+			<div class="menu_icons" id="menu_icons">
 				<div class="menu">
-					<a href="">
+					<a href="#">
 						Home
 					</a>
-					<a href="">
+					<a href="#">
 						Pages
 					</a>
-					<a href="">
+					<a href="#">
 						Features
 					</a>
-					<a href="">
+					<a href="#">
 						Extensions
 					</a>
-					<a href="">
+					<a href="#">
 						Tutorials
 					</a>
-					<a href="">
+					<a href="#">
 						Contact us
 					</a>
 				</div>
 				<div class="icons">
-					<a href="">
+					<a href="#">
 						<img src="imgs/facebook.png" alt="">
 					</a>
-					<a href="">
+					<a href="#">
 						<img src="imgs/twit.png" alt="">
 					</a>
-					<a href="">
+					<a href="#">
 						<img src="imgs/skype.png" alt="">
 					</a>
-					<a href="">
+					<a href="#">
 						<img src="imgs/inst.png" alt="">
 					</a>
 				</div>
 			</div>
+			<div class="hamb" id="hamb">
+				<span class="bar"></span>
+				<span class="bar"></span>
+				<span class="bar"></span>
+			</div>
 		</nav>
+		<div class="popup" id="popup"></div>
+
 		<hr>
 		<h1>
 			CREATIVES
@@ -65,16 +74,18 @@
 		<p class="scroll_down">
 			Scroll Down
 		</p>
-		<img src="imgs/arrow_down.png" alt="" class="arrow">
+		<a href="#movie">
+			<img src="imgs/arrow_down.png" alt="" class="arrow">
+		</a>
 	</header>
 	<main>
-		<div class="awesome_agency">
-			<h2>
+		<div class="awesome_agency" id="movie">
+			<h2 class="element-animation">
 				We Are An Awesome Agency
-				<p>W</p>
+				<p class="element-animation">W</p>
 			</h2>
 			<div class="features container">
-				<div class="feature">
+				<div class="feature element-animation">
 					<div class="block-img">
 						<img src="imgs/feature_1,2.png" alt="">
 					</div>
@@ -85,7 +96,7 @@
 						Aenean lacinia bibendum nulla sed consectetur. Vivamus sagittis lacus vel augue laoreet rutrum faucibus
 					</p>
 				</div>
-				<div class="feature">
+				<div class="feature element-animation">
 					<div class="block-img">
 						<img src="imgs/feature_1,2.png" alt="">
 					</div>
@@ -96,7 +107,7 @@
 						Aenean lacinia bibendum nulla sed consectetur. Vivamus sagittis lacus vel augue laoreet rutrum faucibus
 					</p>
 				</div>
-				<div class="feature">
+				<div class="feature element-animation">
 					<div class="block-img">
 						<img src="imgs/feature_3.png" alt="">
 					</div>
@@ -107,7 +118,7 @@
 						Aenean lacinia bibendum nulla sed consectetur. Vivamus sagittis lacus vel augue laoreet rutrum faucibus
 					</p>
 				</div>
-				<div class="feature">
+				<div class="feature element-animation">
 					<div class="block-img">
 						<img src="imgs/feature_4.png" alt="">
 					</div>
@@ -124,53 +135,53 @@
 			<div class="blocks">
 				<div class="block_text black">
 					<div class="text-left">
-						<p class="overhead">Jan 4, 2016 <span class="vertical">|</span> in Culture</p>
-						<h3>Akita Inu Dog</h3>
-						<p class="info">Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec sed odio dui. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor.</p>
-						<p class="info">Donec ullamcorper nulla non metus auctor fringilla. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed posuere consectetur </p>
+						<p class="overhead element-animation">Jan 4, 2016 <span class="vertical">|</span> in Culture</p>
+						<h3 class="element-animation">Akita Inu Dog</h3>
+						<p class="info element-animation">Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec sed odio dui. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor.</p>
+						<p class="info element-animation">Donec ullamcorper nulla non metus auctor fringilla. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed posuere consectetur </p>
 					</div>
 				</div>
-				<div class="block_img">
-					<img src="imgs/akita_black.png" alt="">
+				<div class="block_img ">
+					<img src="imgs/akita_black.png" alt="" class="element-animation">
 				</div>
 			</div>
 			<div class="blocks">
 				<div class="block_img">
-					<img src="imgs/akita_white.png" alt="">
+					<img src="imgs/akita_white.png" alt="" class="element-animation">
 				</div>
 				<div class="block_text white">
 					<div class="text-right">
-						<p class="overhead">Jan 4, 2016 <span class="vertical">|</span> in Culture</p>
-						<h3>Akita Inu Dog</h3>
-						<p class="info">Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec sed odio dui. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor.</p>
-						<p class="info">Donec ullamcorper nulla non metus auctor fringilla. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed posuere consectetur </p>
+						<p class="overhead element-animation">Jan 4, 2016 <span class="vertical">|</span> in Culture</p>
+						<h3 class="element-animation">Akita Inu Dog</h3>
+						<p class="info element-animation">Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec sed odio dui. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor.</p>
+						<p class="info element-animation">Donec ullamcorper nulla non metus auctor fringilla. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed posuere consectetur </p>
 					</div>
 				</div>
 			</div>
 		</div>
 		<div class="lets_blog">
-			<h2>
+			<h2 class="element-animation">
 				Let's blog
-				<p>B</p>
+				<p class="element-animation">B</p>
 			</h2>
-			<p class="under_text">We love clean design and advanced digital solutions.</p>
+			<p class="under_text element-animation">We love clean design and advanced digital solutions.</p>
 			<div class="blocks container">
-				<div class="block">
+				<div class="block element-animation">
 					<img src="imgs/fresh_1.png" alt="">
 					<h4>Fresh Summer Campaign</h4>
 					<p>Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec sed odio dui. Vivamus sagittis lacus vel augue</p>
 				</div>
-				<div class="block">
+				<div class="block element-animation">
 					<img src="imgs/fresh_2.png" alt="">
 					<h4>Fresh Summer Campaign</h4>
 					<p>Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec sed odio dui. Vivamus sagittis lacus vel augue</p>
 				</div>
-				<div class="block">
+				<div class="block element-animation">
 					<img src="imgs/fresh_3.png" alt="">
 					<h4>Fresh Summer Campaign</h4>
 					<p>Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec sed odio dui. Vivamus sagittis lacus vel augue</p>
 				</div>
-				<div class="block">
+				<div class="block element-animation">
 					<img src="imgs/fresh_1.png" alt="">
 					<h4>Fresh Summer Campaign</h4>
 					<p>Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec sed odio dui. Vivamus sagittis lacus vel augue</p>
@@ -179,13 +190,13 @@
 		</div>
 		<div class="block_text_inf">
 			<div class="block container">
-				<div class="body">
+				<div class="body element-animation">
 					<img src="imgs/feature_1,2.png" alt="">
 					<p>
 						Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec sed odio dui. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor.
 					</p>
 				</div>
-				<div class="body">
+				<div class="body element-animation">
 					<img src="imgs/feature_1,2.png" alt="">
 					<p>
 						Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec sed odio dui. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor.
@@ -196,107 +207,110 @@
 		<div class="akita_inu_dog2">
 			<div class="body container">
 				<div class="text">
-					<h3 class="title">
+					<h3 class="title element-animation">
 						Akita Inu Dog
 					</h3>
-					<p class="text">
+					<p class="text element-animation">
 						Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec sed odio dui. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor.
 					</p>
 					<ul>
-						<li>
+						<li class="element-animation">
 							Fully Responsive Design
 						</li>
-						<li>
+						<li class="element-animation">
 							High Quality Code
 						</li>
-						<li>
+						<li class="element-animation">
 							Different Headers & Layout
 						</li>
 					</ul>
 				</div>
-				<div class="img">
+				<div class="img element-animation">
 					<img src="imgs/akita_iPhone.png" alt="">
 				</div>
 			</div>
 		</div>
 		<div class="our_team">
-			<h2>
+			<h2 class="element-animation">
 				our team
-				<p>T</p>
+				<p class="element-animation">T</p>
 			</h2>
-			<p class="under_text">
+			<p class="under_text element-animation">
 				sales long tail influencer pitch release niche market.
 			</p>
-			<div class="blocks container">
-				<div class="block">
-					<div class="img">
-						<img src="imgs/team_1.png" alt="">
-						<div class="block_text_OT">
-							<h3>
-								JOHN SNOW
-							</h3>
-							<p>
-								CEO
-							</p>
+			<div class="slider">
+				<div class="blocks container slider-line" id="slider-line">
+					<div class="block element-animation">
+						<div class="img">
+							<img src="imgs/team_1.png" alt="">
+							<div class="block_text_OT">
+								<h3>
+									JOHN SNOW
+								</h3>
+								<p>
+									CEO
+								</p>
+							</div>
 						</div>
 					</div>
-				</div>
-				<div class="block">
-					<div class="img">
-						<img src="imgs/team_2.png" alt="">
-						<div class="block_text_OT">
-							<h3>
-								DAVID SMITH
-							</h3>
-							<p>
-								WebDesigner
-							</p>
+					<div class="block element-animation">
+						<div class="img">
+							<img src="imgs/team_2.png" alt="">
+							<div class="block_text_OT">
+								<h3>
+									DAVID SMITH
+								</h3>
+								<p>
+									WebDesigner
+								</p>
+							</div>
 						</div>
 					</div>
-				</div>
-				<div class="block">
-					<div class="img">
-						<img src="imgs/team_3.png" alt="">
-						<div class="block_text_OT">
-							<h3>
-								DAVID SMITH
-							</h3>
-							<p>
-								Photographer
-							</p>
+					<div class="block element-animation">
+						<div class="img">
+							<img src="imgs/team_3.png" alt="">
+							<div class="block_text_OT">
+								<h3>
+									DAVID SMITH
+								</h3>
+								<p>
+									Photographer
+								</p>
+							</div>
 						</div>
 					</div>
-				</div>
-				<div class="block">
-					<div class="img">
-						<img src="imgs/team_4.png" alt="">
-						<div class="block_text_OT">
-							<h3>
-								LADY SANSA
-							</h3>
-							<p>
-								Photographer
-							</p>
+					<div class="block element-animation">
+						<div class="img">
+							<img src="imgs/team_4.png" alt="">
+							<div class="block_text_OT">
+								<h3>
+									LADY SANSA
+								</h3>
+								<p>
+									Photographer
+								</p>
+							</div>
 						</div>
 					</div>
 				</div>
 			</div>
+			<p class="under_slider_text">slider</p>
 		</div>
 		<div class="we_love">
-			<h2>
+			<h2 class="element-animation">
 				We’d love to hear about your project.
-				<p>C</p>
+				<p class="element-animation">C</p>
 			</h2>
 			<form class="container">
-				<div class="inputs">
-					<input type="text" placeholder="Name">
-					<input type="text" placeholder="Email">
-					<input type="text" placeholder="Name">
+				<div class="inputs element-animation">
+					<input type="text" placeholder="Name" class="element-animation">
+					<input type="text" placeholder="Email" class="element-animation">
+					<input type="text" placeholder="Name" class="element-animation">
 				</div>
-				<textarea id="" rows="8" placeholder="Message"></textarea>
-				<button>SUBMIT</button>
+				<textarea id="" rows="8" placeholder="Message" class="element-animation"></textarea>
+				<button class="element-animation">SUBMIT</button>
 			</form>
-		</div>
+		</div>				
 		<div class="map">
 			<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d434904.4417528049!2d37.31597602393146!3d55.74263142864731!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b54afc73d4b0c9%3A0x3d44d6cc5757cf4c!2z0JzQvtGB0LrQstCw!5e1!3m2!1sru!2sru!4v1659434557441!5m2!1sru!2sru" width="100%" height="450" style="border:0; margin-bottom: -5px;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
 		</div>
@@ -307,6 +321,10 @@
 			<img src="imgs/bee.png" alt="">
 		</div>
 	</footer>
-	<script src=""></script>
+	
+	<script src="visible.js"></script>
+	<script src="burger.js"></script>
+	<script src="progress.js"></script>
+	<script src="anchor.js"></script>
 </body>
 </html>
