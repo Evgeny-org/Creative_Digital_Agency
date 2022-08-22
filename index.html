@@ -10,7 +10,9 @@
 	<link rel="stylesheet" href="style.css">
 </head>
 <body>
-	<header>
+	<div class="progress"></div>
+	<a href="#up" class="up">up</a>
+	<header id="up">
 		<nav class="container">
 			<a class="logo" href="">
 				<div class="blue_rec">
@@ -72,10 +74,12 @@
 		<p class="scroll_down">
 			Scroll Down
 		</p>
-		<img src="imgs/arrow_down.png" alt="" class="arrow">
+		<a href="#movie">
+			<img src="imgs/arrow_down.png" alt="" class="arrow">
+		</a>
 	</header>
 	<main>
-		<div class="awesome_agency">
+		<div class="awesome_agency" id="movie">
 			<h2 class="element-animation">
 				We Are An Awesome Agency
 				<p class="element-animation">W</p>
@@ -231,12 +235,12 @@
 				our team
 				<p class="element-animation">T</p>
 			</h2>
-			<p class="under_text">
+			<p class="under_text element-animation">
 				sales long tail influencer pitch release niche market.
 			</p>
 			<div class="slider">
 				<div class="blocks container slider-line" id="slider-line">
-					<div class="block">
+					<div class="block element-animation">
 						<div class="img">
 							<img src="imgs/team_1.png" alt="">
 							<div class="block_text_OT">
@@ -249,7 +253,7 @@
 							</div>
 						</div>
 					</div>
-					<div class="block">
+					<div class="block element-animation">
 						<div class="img">
 							<img src="imgs/team_2.png" alt="">
 							<div class="block_text_OT">
@@ -262,7 +266,7 @@
 							</div>
 						</div>
 					</div>
-					<div class="block">
+					<div class="block element-animation">
 						<div class="img">
 							<img src="imgs/team_3.png" alt="">
 							<div class="block_text_OT">
@@ -275,7 +279,7 @@
 							</div>
 						</div>
 					</div>
-					<div class="block">
+					<div class="block element-animation">
 						<div class="img">
 							<img src="imgs/team_4.png" alt="">
 							<div class="block_text_OT">
@@ -298,13 +302,13 @@
 				<p class="element-animation">C</p>
 			</h2>
 			<form class="container">
-				<div class="inputs">
-					<input type="text" placeholder="Name">
-					<input type="text" placeholder="Email">
-					<input type="text" placeholder="Name">
+				<div class="inputs element-animation">
+					<input type="text" placeholder="Name" class="element-animation">
+					<input type="text" placeholder="Email" class="element-animation">
+					<input type="text" placeholder="Name" class="element-animation">
 				</div>
-				<textarea id="" rows="8" placeholder="Message"></textarea>
-				<button>SUBMIT</button>
+				<textarea id="" rows="8" placeholder="Message" class="element-animation"></textarea>
+				<button class="element-animation">SUBMIT</button>
 			</form>
 		</div>				
 		<div class="map">
@@ -320,5 +324,7 @@
 	
 	<script src="visible.js"></script>
 	<script src="burger.js"></script>
+	<script src="progress.js"></script>
+	<script src="anchor.js"></script>
 </body>
 </html>

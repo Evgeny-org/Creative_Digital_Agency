@@ -4,7 +4,6 @@
 	padding: 0;
 }
 
-
 /*Default отступы*/
 .container{
 	max-width: 80%;
@@ -20,6 +19,40 @@
 	background-color: #f3f3f3;
 }
 
+a.up{
+	position: fixed;
+	bottom: 5%;
+	right: 5%;
+	font-size: 36px;
+	font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+	text-decoration: none;
+	color: red;
+	border: 1px solid red;
+	border-radius: 100%;
+	padding: 25px;
+	opacity: 0;
+	z-index: 1;
+}
+@keyframes up{
+	0%{
+		opacity: 0;
+		transform: translate(100px, 100px);
+	}
+	100%{
+		opacity: 1;
+		transform: translate(0px);
+	}
+}
+@keyframes down{
+	0%{
+		opacity: 1;
+		transform: translate(0px);
+	}
+	100%{
+		opacity: 0;
+		transform: translate(100px, 100px);
+	}
+}
 
 /*Локально подключенные шрифты из папок проекта*/
 										/*Gotham*/
@@ -57,6 +90,17 @@
 
 @media (max-width: 1920px) {
 										/*Шапка*/
+	/*Линия прогресса*/
+	.progress{
+		position: fixed;
+		top: 0;
+		left: 0;
+		width: 0%;
+		height: 5px;
+		background-color: red;
+		z-index: 1;
+	}
+
 	/*задний фон, отступы, размеры*/
 	header{
 		background-image: url(imgs/header_bg.png);
@@ -371,7 +415,6 @@
 		text-align: center;
 	}
 
-
 	main .akita_inu_dog{
 		margin-bottom: 225px;
 	}
@@ -537,7 +580,7 @@
 		width: 23%;
 	}
 	main .lets_blog .blocks .block.element-animation{
-		transform: translateX(55px);
+		transform: translateX(10px);
 		opacity: 0;
 	}
 	main .lets_blog .blocks .block.element-animation.element-show {
@@ -589,7 +632,7 @@
 	}
 	main .block_text_inf .block .body:nth-child(1).element-animation{
 		opacity: 0;
-		transform: translateX(-100px);
+		transform: translateX(-20px);
 	}
 	main .block_text_inf .block .body.element-animation.element-show{
 		opacity: 1;
@@ -598,7 +641,7 @@
 	}
 	main .block_text_inf .block .body:nth-child(2).element-animation{
 		opacity: 0;
-		transform: translateX(100px);
+		transform: translateX(20px);
 	}
 	main .block_text_inf .block .body.element-animation.element-show{
 		opacity: 1;
@@ -654,29 +697,26 @@
 		transition: .5s;
 	}
 	main .akita_inu_dog2 .img.element-animation{
-		opacity: 0;
-		transform: translateX(100px); 
-		animation: iPhone 1s;
 	}
 	main .akita_inu_dog2 .img.element-animation.element-show{
+		animation: iPhone .5s 1;
+	}
+	@keyframes iPhone{
+		0%{
+		opacity: 0;
+		transform: translateX(100px);
+		}
+		33%{
+		transform: translateX(-50px);
+		}
+		66%{
+		transform: translateX(25px);
+		}
+		100%{
 		opacity: 1;
 		transform: translateX(0);
-		transition: .5s;
-		animation: iPhone 1s 1.5;
-	}
-
-	@keyframes iPhone{
-		0% { 
-			opacity: 0;
-		}
-		50% { 
-			opacity: 1;
-		}
-		100% { 
-			opacity: 0;
 		}
 	}
-
 
 	main .akita_inu_dog2 .body{
 		display: flex;
@@ -745,6 +785,15 @@
 		font-size: 36px;
 		margin-bottom: 100px;
 	}
+	main .our_team p.under_text.element-animation {
+		transform: translateY(100px);
+		opacity: 0;
+	}
+	main .our_team p.under_text.element-animation.element-show {
+		transform: translateY(0px);
+		opacity: 1;
+		transition: .5s;
+	}
 
 	main .our_team .blocks{
 		display: flex;
@@ -753,6 +802,37 @@
 
 	main .our_team .block{
 		width: 23%;
+	}
+	main .our_team .block:nth-child(1).element-animation{
+		transform: translate(300px, 50px);
+	}
+	main .our_team .block:nth-child(1).element-animation.element-show{
+		transform: translate(0, 0);
+		transition: .5s;
+		transition-delay: .1s;
+	}
+	main .our_team .block:nth-child(2).element-animation{
+		transform: translate(100px, -50px);
+	}
+	main .our_team .block:nth-child(2).element-animation.element-show{
+		transform: translate(0, 0);
+		transition: .5s;
+	}
+	main .our_team .block:nth-child(3).element-animation{
+		transform: translate(-200px, 100px);
+	}
+	main .our_team .block:nth-child(3).element-animation.element-show{
+		transform: translate(0, 0);
+		transition: .5s;
+		transition-delay: .3s;
+	}
+	main .our_team .block:nth-child(4).element-animation{
+		transform: translate(-300px, -70px);
+	}
+	main .our_team .block:nth-child(4).element-animation.element-show{
+		transform: translate(0, 0);
+		transition: .5s;
+		transition-delay: .2s;
 	}
 
 	main .our_team .block .img{
@@ -817,6 +897,8 @@
 		font-size: 20px;
 	}
 
+
+
 	main .we_love input,
 	main .we_love textarea{
 		width: 100%;
@@ -826,6 +908,41 @@
 		background-color: rgba(0, 0, 0, 0);
 		border: 2px solid #fff;
 		color: #fff;
+	}
+
+	main .we_love .inputs.element-animation{
+		opacity: 0;
+		transform: translateY(50px);
+	}
+	main .we_love .inputs.element-animation.element-show{
+		opacity: 1;
+		transition: .5s;
+		transform: translateY(0px);
+	}
+
+	main .we_love input:nth-child(1).element-animation{
+		transform: translateX(-50px);
+	}
+	main .we_love input:nth-child(1).element-animation.element-show{
+		transform: translateX(0px);
+		transition: .5s;
+		transition-delay: .5s;
+	}
+	main .we_love input:nth-child(2).element-animation{
+		transform: translateY(-50px);
+	}
+	main .we_love input:nth-child(2).element-animation.element-show{
+		transform: translateY(0px);
+		transition: .5s;
+		transition-delay: 1s;
+	}
+	main .we_love input:nth-child(3).element-animation{
+		transform: translateX(50px);
+	}
+	main .we_love input:nth-child(3).element-animation.element-show{
+		transform: translateX(0px);
+		transition: .5s;
+		transition-delay: .5s;
 	}
 
 	main .we_love textarea::placeholder,
@@ -840,6 +957,15 @@
 	main .we_love textarea{
 		margin-bottom: 50px;
 	}
+	main .we_love textarea.element-animation{
+		opacity: 0;
+		transform: translateY(100px);
+	}
+	main .we_love textarea.element-animation.element-show{
+		opacity: 1;
+		transition: .5s;
+		transform: translateY(0px);
+	}
 
 	main .we_love button{
 		cursor: pointer;
@@ -850,6 +976,45 @@
 		padding: 20px 80px;
 		background-color: #11749e;
 		border: 0;
+	}
+	main .we_love button.element-animation{
+		opacity: 0;
+	}
+	main .we_love button.element-animation.element-show{
+		opacity: 1;
+		transition: .5s;
+		animation: but_2 2s .5s infinite, but .5s 1;
+	}
+	@keyframes but {
+		0%{
+			transform: translateX(100px);
+		}
+		25%{
+			transform: translateX(-50px);
+		}
+		50%{
+			transform: translateX(25px);
+		}
+		75%{
+			transform: translateX(-5px);
+		}
+		100%{
+			transform: translateX(0px);
+		}
+	}
+	@keyframes but_2 {
+		0%{
+			transform: scale(1);
+		}
+		50%{
+			transform: scale(1.1);
+		}
+		100%{
+			transform: scale(1);
+		}
+	}
+	main .we_love button.element-animation.element-show:hover{
+		animation: none, but .5s 1;
 	}
 
 	footer{
@@ -869,6 +1034,13 @@
 		font-family: Roboto;
 	}
 }
+
+@media (max-width: 1919px) {
+										/*Шапка*/
+	/*Линия прогресса*/
+	/*.progress{
+		display: none;
+	}*/
 
 @media (max-width: 1600px) {
 	/*отмена скролла при активном бургере*/
